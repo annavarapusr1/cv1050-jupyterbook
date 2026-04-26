@@ -1,6 +1,6 @@
-numpy>=1.24
-matplotlib>=3.7
-scipy>=1.10
-sympy>=1.12
-ipympl>=0.9
+numpy
+matplotlib
+scipy
+sympy
+ipympl
 jupyter-book>=0.15,<1.0
