@@ -57,6 +57,6 @@ launch_buttons:
   thebe: true
 
 repository:
-  url: https://github.com/YOUR_USERNAME/cv1050-jupyterbook   # ← set your repo
+  url: https://github.com/annavarapusr1/cv1050-jupyterbook   # ← set your repo
   path_to_book: .
   branch: main
