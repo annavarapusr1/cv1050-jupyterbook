@@ -38,7 +38,6 @@ parse:
   myst_url_schemes: [mailto, http, https]
 
 # Bibliography
-bibtex_bibfiles: []
 
 # Sphinx configuration
 sphinx:
