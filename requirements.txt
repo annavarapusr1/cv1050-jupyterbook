@@ -3,4 +3,4 @@ matplotlib>=3.7
 scipy>=1.10
 sympy>=1.12
 ipympl>=0.9
-jupyter-book>=1.0.0
+jupyter-book>=0.15,<1.0
