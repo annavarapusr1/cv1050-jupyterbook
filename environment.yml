@@ -1,0 +1,14 @@
+name: cv1050
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - matplotlib
+  - scipy
+  - sympy
+  - ipympl
+  - pip
+  - pip:
+    - jupyter-book>=0.15,<1.0
