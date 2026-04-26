@@ -1,0 +1,9 @@
+# Runtime dependencies — used by both Netlify (build) and BinderHub (Thebe execution)
+numpy>=1.24
+matplotlib>=3.7
+scipy>=1.10
+sympy>=1.12
+ipympl>=0.9        # required for %matplotlib widget (interactive sliders via Thebe)
+
+# Build-only (Netlify)
+jupyter-book>=1.0.0

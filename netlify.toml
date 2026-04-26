@@ -1,0 +1,11 @@
+[build]
+  command   = "pip install jupyter-book && jupyter-book build ."
+  publish   = "_build/html"
+
+[build.environment]
+  PYTHON_VERSION = "3.11"
+
+[[redirects]]
+  from   = "/"
+  to     = "/index.html"
+  status = 200

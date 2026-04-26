@@ -1,0 +1,18 @@
+format: jb-book
+root: notebooks/00_intro
+
+chapters:
+  - file: notebooks/01_geometrical_preliminaries
+    title: "1. Geometrical Preliminaries & Vectors"
+  - file: notebooks/02_vector_operations
+    title: "2. Vector Operations"
+  - file: notebooks/03_dot_cross_products
+    title: "3. Dot and Cross Products"
+  - file: notebooks/04_index_notation
+    title: "4. Index Notation"
+  - file: notebooks/05_matrices_transformations
+    title: "5. Matrices & Coordinate Transformations"
+  - file: notebooks/06_tensors
+    title: "6. Second-Order Tensors"
+  - file: notebooks/07_eigenvalues_invariants
+    title: "7. Eigenvalues, Spectral Decomposition & Invariants"

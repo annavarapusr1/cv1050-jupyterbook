@@ -1,0 +1,62 @@
+# CV 1050: Vector Calculus and Numerical Methods — JupyterBook Configuration
+title: "CV 1050: Vector Calculus and Numerical Methods"
+author: "Department of Civil Engineering, IIT Madras"
+logo: ""
+
+# Notebooks are pre-executed; Netlify just converts them to HTML.
+# Thebe (below) handles live execution in-page via BinderHub.
+execute:
+  execute_notebooks: "off"
+  timeout: 120
+
+# HTML-specific settings
+html:
+  use_issues_button: false
+  use_repository_button: false
+  use_edit_page_button: false
+  navbar_number_sections: true
+  home_page_in_navbar: true
+  # Thebe: adds a rocket (🚀) button on every notebook page.
+  # Clicking it spins up a free Binder kernel and makes all
+  # code cells live-editable and executable in the browser.
+  use_thebe_button: true
+
+# LaTeX/Math rendering
+parse:
+  myst_enable_extensions:
+    - amsmath
+    - colon_fence
+    - deflist
+    - dollarmath
+    - html_admonition
+    - html_image
+    - linkify
+    - replacements
+    - smartquotes
+    - substitution
+    - tasklist
+  myst_url_schemes: [mailto, http, https]
+
+# Bibliography
+bibtex_bibfiles: []
+
+# Sphinx configuration
+sphinx:
+  config:
+    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+    html_theme: sphinx_book_theme
+    html_theme_options:
+      use_fullscreen_button: true
+      show_navbar_depth: 2
+
+# ── Thebe / BinderHub live execution ────────────────────────────────────────
+# BinderHub builds a Docker image from your repo on first click (~1-2 min),
+# then subsequent launches for the same commit are instant (cached).
+# Uses the free public mybinder.org — no account needed.
+launch_buttons:
+  thebe: true
+
+repository:
+  url: https://github.com/YOUR_USERNAME/cv1050-jupyterbook   # ← set your repo
+  path_to_book: .
+  branch: main
