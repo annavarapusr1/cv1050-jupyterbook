@@ -1,6 +1,6 @@
 title: "CV 1050: Vector Calculus and Numerical Methods"
 author: "Department of Civil Engineering, IIT Madras"
-logo: ""
+logo: "iitm_logo.png"
 
 execute:
   execute_notebooks: "off"
@@ -12,7 +12,10 @@ html:
   use_edit_page_button: false
   navbar_number_sections: true
   home_page_in_navbar: true
-  use_thebe_button: true
+  extra_css:
+    - _static/custom.css
+  extra_navbar: ""
+  google_analytics_id: ""
 
 parse:
   myst_enable_extensions:
@@ -29,9 +32,9 @@ parse:
     - tasklist
   myst_url_schemes: [mailto, http, https]
 
+# Open in Colab button — instant, no Binder/Docker wait
 launch_buttons:
-  thebe: true
-  binderhub_url: "https://mybinder.org"
+  colab_url: "https://colab.research.google.com"
 
 repository:
   url: https://github.com/annavarapusr1/cv1050-jupyterbook
@@ -45,12 +48,8 @@ sphinx:
     html_theme_options:
       use_fullscreen_button: true
       show_navbar_depth: 2
-      launch_buttons:
-        thebe: true
-        binderhub_url: "https://mybinder.org"
-        notebook_interface: "jupyterlab"
       repository_url: "https://github.com/annavarapusr1/cv1050-jupyterbook"
       repository_branch: "main"
       path_to_book: "."
-      use_source_button: true
-      use_repository_button: true
+      launch_buttons:
+        colab_url: "https://colab.research.google.com"
